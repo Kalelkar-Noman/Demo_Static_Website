@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+  /* overflow-x: scroll; */
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  /* overflow-wrap: break-word; */
+  /* overflow:auto; */
+}
+
+/* body{
+  position: relative;
+} */
+.head {
+  align-items: center;
+  vertical-align: top;
+}
+
+#h1 {
+  font-size: 3.1rem;
+  padding-bottom: 5px;
+}
+
+.about-h {
+  margin: 0;
+  /* padding: 2.3rem; */
+  /* padding: 5.4vw;new */
+  /* padding-bottom: 3rem;  */
+  /* width: 92vw; */
+  /* width: 82.6vw */
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-size: 1.7em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+/* ----- */
+/* html {
+  scroll-padding-top: 20%;
+} */
+/* .service-h{
+  height: 20rem;
+} */
+/* .head {
+   position: relative; 
+   top: 3.1rem; 
+ } */
+/* .top-bottom-m {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+} */
+
+/* ----- */
+.logo {
+  height: 40px;
+  width: 109px;
+}
+
+.c-btn {
+  margin-top: 30px;
+  border-radius: 4px;
+  height: 3em;
+  width: 12em;
+}
+
+.navbar-toggler {
+  color: #ced4da;
+  background-color: #198754;
+}
+
+.serv-logo {
+  height: 75px;
+  width: 75px;
+}
+
+.service-div {
+  background-color: #dbfce1;
+  padding: 2.5rem 1rem;
+  /* height: 10rem;
+  width: 6.5rem; */
+  height: 11rem;
+  width: 7rem;
+  position: relative;
+  display: inline-block;
+}
+
+.service-h {
+  padding-bottom: 7rem;
+  /* height: 40rem; */
+}
+
+/* .custom-h { */
+/* height: 29.5rem; */
+/* height: 31.3rem; */
+/* height: 65vh;80 */
+/* } */
+
+.theme-color {
+  background-color: #4af6b0;
+}
+
+.theme-color-text {
+  color: #01a564;
+}
+
+.map {
+  background-color: #4af6b0;
+  padding: 1.5rem 2rem 0.9rem 2rem;
+}
+
+@media screen and (min-width: 575px) {
+  #collapsibleNavbar {
+    justify-content: end !important;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width:576px) {
+
+  /* #collapsibleNavbar{
+display:none;
+ } */
+  .about-h {
+    padding: 5.4vw;
+  }
+
+  header {
+    display: none;
+  }
+
+  /* .about-h{
+  padding: 2.3rem;
+ } */
+}
+
+@media (max-width:305px) {
+  .head-h {
+    width: 80vw;
+    /*84*/
+  }
+}
+
+/* 640 */
+@media screen and (max-width: 850px) {
+  .head {
+    position: relative;
+    /* top: 2.4rem; */
+    text-align: center;
+  }
+
+  .cust-w {
+    width: 3em;
+  }
+
+  .no-margin {
+    margin: 0;
+  }
+
+  h1 {
+    align-items: center;
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    margin-top: 0 !important;
+    font-size: revert;
+    font-weight: unset;
+  }
+
+  .c-btn {
+    margin-top: 1.7em;
+  }
+
+  .com-img {
+    padding-top: 1.7rem;
+    width: 100vw;
+  }
+
+  .custom-h {
+    height: auto;
+  }
+
+  .Centre {
+    justify-content: center !important;
+  }
+
+  #about-us {
+    width: 85vw;
+  }
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #01a564;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  /*padding: 15px;  Some padding */
+  /* border-radius: 6px; */
+  /* Rounded corners */
+  /*font-size: 18px;  Increase font size */
+  /* height: 2.5em;
+  width: 2.5em; */
+
+  height: 4rem;
+  width: 3rem;
+  border-radius: 1em;
+}
+
+.colr {
+  background-color: #f7e3c8;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+.service-p-h {
+  height: 6.6rem;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.crd-1 {
+  border-bottom: 4px solid #2db6fa;
+}
+
+.crd-1:hover {
+  background-color: #2db6fa;
+  color: white;
+}
+
+.bg-theme:hover {
+  background-color: #f68c09;
+}
+
+.v-c {
+  vertical-align: middle;
+}
+
+.bg-theme {
+  border-bottom: 4px solid #f68c09 !important;
+}
+
+/*# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .custom-w {
+    width: 90vw;
+  }
+}
