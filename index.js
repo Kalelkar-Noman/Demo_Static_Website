@@ -26,7 +26,7 @@ function hoverdiv(a) {
 }
 function nohoverdiv(b) {
   if (b == 1) {
-    document.getElementById("serv-logo1").style.backgroundColor = "#dbfce1";
+    document.getElementById("serv-logo1").style.backgroundColor = "rgb(225 243 253)";
   } else if (b == 2) {
     document.getElementById("serv-logo2").style.backgroundColor = "#f7e3c8";
   } else if (b == 3) {

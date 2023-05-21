@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 * {
-  font-family: "Nunito Sans", sans-serif;
+
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  /* overflow-x: scroll; */
   vertical-align: middle;
   margin: 0;
   padding: 0;
-  /* overflow-wrap: break-word; */
-  /* overflow:auto; */
+
 }
 
 /* body{
@@ -17,10 +16,14 @@
 .head {
   align-items: center;
   vertical-align: top;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 #h1 {
-  font-size: 3.1rem;
+  /* font-size: 3.1rem; */
+  font-size: 52px;
   padding-bottom: 5px;
 }
 
@@ -32,12 +35,14 @@
   /* width: 92vw; */
   /* width: 82.6vw */
 }
+
 h1 {
   font-family: 'Poppins', sans-serif;
 }
 
 h2 {
-  font-size: 1.7em;
+  /* font-size: 1.7em; */
+  font-size: revert;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -45,6 +50,7 @@ h2 {
 :root {
   scroll-behavior: smooth;
 }
+
 /* ----- */
 /* html {
   scroll-padding-top: 20%;
@@ -84,8 +90,17 @@ h2 {
   width: 75px;
 }
 
-.service-div {
+#serv-logo3 {
   background-color: #dbfce1;
+}
+
+#serv-logo1 {
+  background-color: rgb(225 243 253);
+  ;
+}
+
+.service-div {
+
   padding: 2.5rem 1rem;
   /* height: 10rem;
   width: 6.5rem; */
@@ -98,6 +113,11 @@ h2 {
 .service-h {
   padding-bottom: 7rem;
   /* height: 40rem; */
+}
+
+.h-11em {
+
+  height: 11em;
 }
 
 /* .custom-h { */
@@ -223,11 +243,9 @@ display:none;
   /*padding: 15px;  Some padding */
   /* border-radius: 6px; */
   /* Rounded corners */
-  /*font-size: 18px;  Increase font size */
-  /* height: 2.5em;
-  width: 2.5em; */
-
-  height: 4rem;
+  font-size: 2em;
+  /*Increase font size */
+  /* height: 4rem; */
   width: 3rem;
   border-radius: 1em;
 }
