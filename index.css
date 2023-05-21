@@ -174,9 +174,10 @@ display:none;
 /* 640 */
 @media screen and (max-width: 850px) {
   .head {
-    position: relative;
+    /* position: relative; */
     /* top: 2.4rem; */
     text-align: center;
+    width: min-content;
   }
 
   .cust-w {
@@ -262,7 +263,8 @@ display:none;
 }
 
 .service-p-h {
-  height: 6.6rem;
+  /* height: 6.6rem; */
+  height: 8rem;
 }
 
 .no-decoration {
@@ -301,14 +303,5 @@ display:none;
 @media (max-width: 1050px) {
   .custom-w {
     width: 90vw;
-  }
-}
-
-@media (max-width:325px) {
-  /* *{
-    width:;
-  } */
-  .com-img{
-    width: -webkit-fill-available;
   }
 }
