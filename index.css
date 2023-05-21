@@ -71,7 +71,7 @@ h2 {
 /* ----- */
 .logo {
   height: 40px;
-  width: 109px;
+  width: 100px;/*109*/
 }
 
 .c-btn {
@@ -145,7 +145,10 @@ h2 {
     justify-content: end !important;
   }
 }
-
+.width-full{
+  width: 100%;
+  margin: 0;
+}
 @media screen and (max-width: 850px) and (min-width:576px) {
 
   /* #collapsibleNavbar{
@@ -154,7 +157,7 @@ display:none;
   .about-h {
     padding: 5.4vw;
   }
-
+  
   header {
     display: none;
   }
@@ -173,13 +176,72 @@ display:none;
 
 /* 640 */
 @media screen and (max-width: 850px) {
+  h1 {
+    align-items: center;
+    font-size: 2rem !important;
+  }
+
+
+  h2 {
+    margin-top: 0 !important;
+    font-size: revert;
+    font-weight: unset;
+  }
+  .sticky-top{
+    width: 100vw;
+  }
   .head {
     /* position: relative; */
     /* top: 2.4rem; */
     text-align: center;
-    width: min-content;
+    /* width:min-content; */
+    width: 100vw;
   }
-
+  .head-h{
+    width: 100vw;
+  }
+  .no-padding{
+    padding: 0;
+    margin: 0;
+  }
+  .m-p-0 h2{
+    width: 84vw;
+    /* width: 100vw; */
+    font-size: 1.1em;
+  }
+  .nav>div{
+    padding: 0;
+  }
+  .m-p-0{
+    /* width: 17em; */
+    /* width: 100vw; */
+    width: 85vw;
+    justify-content: center;
+    display: flex;
+    align-items: center
+  }
+  .centre{
+    width: 34.4em;
+  }
+  .m-p-0m{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    /* width: -webkit-fill-available; */
+    width: 100vw;
+   
+  }
+  .m-p-0 img{
+   
+width: 99%;
+  }
+   .col-lg-6{
+    padding: 0 !important;
+  }
+  .c-btn{
+    /* width: 70%; */
+    width: 7em;
+  }
   .cust-w {
     /* width: 3em; */
     width: auto;
@@ -188,17 +250,11 @@ display:none;
   .no-margin {
     margin: 0;
   }
-
-  h1 {
-    align-items: center;
-    font-size: 2rem !important;
-  }
-
-  h2 {
-    margin-top: 0 !important;
-    font-size: revert;
-    font-weight: unset;
-  }
+.m-p-0 h1{
+  /* width: 100vw; */
+  width: 85vw;
+}
+ 
 
   .c-btn {
     margin-top: 1.7em;
@@ -206,7 +262,7 @@ display:none;
 
   .com-img {
     padding-top: 1.7rem;
-    width: 100vw;
+    width: 100%;
   }
 
   .custom-h {
