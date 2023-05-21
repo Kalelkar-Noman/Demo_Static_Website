@@ -303,3 +303,12 @@ display:none;
     width: 90vw;
   }
 }
+
+@media (max-width:325px) {
+  /* *{
+    width:;
+  } */
+  .com-img{
+    width: -webkit-fill-available;
+  }
+}
