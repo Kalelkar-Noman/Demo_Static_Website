@@ -7,6 +7,7 @@
   vertical-align: middle;
   margin: 0;
   padding: 0;
+  overflow-wrap: break-word;
 /* overflow: scroll; */
 /* outline: solid 1px red; */
 }
@@ -347,7 +348,9 @@ width: 99%;
 .bg-theme {
   border-bottom: 4px solid #f68c09 !important;
 }
-
+address{
+  overflow-wrap: break-word;
+}
 /*# Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -355,7 +358,6 @@ width: 99%;
     transition-delay: 0 !important;
   }
 }
-
 @media (max-width: 1050px) {
   .custom-w {
     width: 90vw;
