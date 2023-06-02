@@ -52,7 +52,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const elements = document.querySelectorAll(".fade-up");
+const elements = document.querySelectorAll(".fade-up",".zoom-out");
 
 elements.forEach((element) => {
   observer.observe(element);
