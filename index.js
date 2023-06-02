@@ -1,3 +1,31 @@
+function toggle() {
+  let d = document.getElementById("drop");
+  let con = document.getElementById("check");
+
+  // Check if the dropdown menu is already open
+  if (d.classList.contains("open")) {
+    // Close the dropdown menu
+    d.classList.remove("open");
+
+    // Update the text of the check element
+    con.innerHTML = "menu";
+  } else {
+    // Open the dropdown menu
+    d.classList.add("open");
+
+    // Update the text of the check element
+    con.innerHTML = "close";
+  }
+}
+function hoverdiv(elementId) {
+  const backgroundColor = "white";
+  document.getElementById(elementId).style.backgroundColor = backgroundColor;
+}
+function nohoverdiv(elementId, divcolor) {
+  const backgroundColor = divcolor;
+  document.getElementById(elementId).style.backgroundColor = backgroundColor;
+}
+
 let mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -14,22 +42,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-function hoverdiv(a) {
-  if (a == 1) {
-    document.getElementById("serv-logo1").style.backgroundColor = "white";
-  } else if (a == 2) {
-    document.getElementById("serv-logo2").style.backgroundColor = "white";
-  } else if (a == 3) {
-    document.getElementById("serv-logo3").style.backgroundColor = "white";
-  }
-}
-function nohoverdiv(b) {
-  if (b == 1) {
-    document.getElementById("serv-logo1").style.backgroundColor = "rgb(225 243 253)";
-  } else if (b == 2) {
-    document.getElementById("serv-logo2").style.backgroundColor = "#f7e3c8";
-  } else if (b == 3) {
-    document.getElementById("serv-logo3").style.backgroundColor = "#dbfce1";
-  }
 }
