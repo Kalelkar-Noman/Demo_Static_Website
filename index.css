@@ -482,5 +482,42 @@ footer ul li a {
     font-size: 25px;
   }
 }
-
 /* end media query */
+
+/* animation */
+.fade-up {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-up.inview {
+  opacity: 1;
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 2s linear;
+}
+/*  */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-image {
+  animation: fadeIn 2s linear;
+  animation-fill-mode: forwards;
+}
+/* end animation */

@@ -25,7 +25,6 @@
     />
     <!--  -->
     <link rel="stylesheet" href="index.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -42,18 +41,18 @@
         </div>
         <div class="right">
           <ul>
-            <li><a class="" href="">Home</a></li>
-            <li><a class="" href="">About</a></li>
-            <li><a class="" href="">Services</a></li>
-            <li><a class="" href="">Privacy Policy</a></li>
-            <li><a class="" href="">Contact Us</a></li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
           <div class="dropdown" id="drop">
-            <li><a class="" href="">Home</a></li>
-            <li><a class="" href="">About</a></li>
-            <li><a class="" href="">Services</a></li>
-            <li><a class="" href="">Privacy Policy</a></li>
-            <li><a class="" href="">Contact Us</a></li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </div>
           <span
             class="material-symbols-outlined menu-icon"
@@ -73,23 +72,19 @@
       <div class="container first-cntainer">
         <section class="first-section row gy-4">
           <div class="first-left col-lg-6">
-            <h1 data-aos="fade-up">YOUR TRUSTED EXCHANGE WITH BEST RATE</h1>
-            <h2 data-aos="fade-up" data-aos-delay="400">
+            <h1 class="fade-up">YOUR TRUSTED EXCHANGE WITH BEST RATE</h1>
+            <h2 class="fade-up" data-aos-delay="400">
               We will not only have great service, we will offer you the best
               exchange rates.
             </h2>
-            <div data-aos="fade-up" data-aos-delay="600">
+            <div class="fade-up">
               <a href="#contact">
                 Contact Us
                 <span class="material-symbols-outlined"> arrow_forward </span>
               </a>
             </div>
           </div>
-          <div
-            class="first-right col-lg-6"
-            data-aos="zoom-out"
-            data-aos-delay="200"
-          >
+          <div class="first-right col-lg-6 fade-in-image">
             <img
               src="https://tayoex.com.au/assets/img/Image_001.png"
               class="img-fluid"
@@ -100,12 +95,8 @@
       </div>
       <!-- first section end -->
       <!-- second section -->
-      <div class="container" data-aos="fade-up">
-        <section
-          class="second-section row gy-4"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+      <div class="container" data-aos="fade-up" id="about">
+        <section class="second-section row gy-4 fade-up">
           <div class="second-left col-lg-6">
             <h3>ABOUT US</h3>
             <h2>
@@ -130,11 +121,7 @@
               </a>
             </div>
           </div>
-          <div
-            class="second-right col-lg-6"
-            data-aos="zoom-out"
-            data-aos-delay="200"
-          >
+          <div class="second-right col-lg-6 zoom-out">
             <img
               src="https://tayoex.com.au/assets/img/Image_002.png"
               class="img-fluid"
@@ -145,18 +132,14 @@
       </div>
       <!-- second section end -->
       <!-- third section -->
-      <div class="container third-section" data-aos="fade-up">
+      <div class="container third-section" data-aos="fade-up" id="services">
         <div>
           <h2>Services</h2>
           <p>We offer following services.</p>
         </div>
         <br />
         <div class="row gy-4 justify-content-center">
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <div class="col-lg-4 col-md-6 fade-up">
             <div
               class="service-div blue"
               onmouseover="hoverdiv('s-div-1')"
@@ -176,11 +159,7 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <div class="col-lg-4 col-md-6 fade-up">
             <div
               class="service-div orange"
               onmouseover="hoverdiv('s-div-2')"
@@ -200,11 +179,7 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
+          <div class="col-lg-4 col-md-6 fade-up">
             <div
               class="service-div green"
               onmouseover="hoverdiv('s-div-3')"
@@ -227,7 +202,7 @@
       </div>
       <!-- third section end -->
       <!-- last/fourth section -->
-      <div class="fourth-section container" data-aos="fade-up">
+      <div class="fourth-section container fade-up" id="contact">
         <div>
           <h2>CONTACT</h2>
           <p>Contact Us</p>
@@ -349,9 +324,5 @@
     </footer>
     <!-- footer end -->
     <script src="index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

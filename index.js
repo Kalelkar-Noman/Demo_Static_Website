@@ -43,3 +43,17 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+//
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add("inview");
+    }
+  });
+});
+
+const elements = document.querySelectorAll(".fade-up");
+
+elements.forEach((element) => {
+  observer.observe(element);
+});
