@@ -9,7 +9,7 @@ function toggle() {
 
     // Update the text of the check element
     con.innerHTML = "menu";
-     // If the clicked element is a li element, then close the dropdown menu
+    // If the clicked element is a li element, then close the dropdown menu
   } else {
     // Open the dropdown menu
     d.classList.add("open");
@@ -18,7 +18,7 @@ function toggle() {
     con.innerHTML = "close";
   }
 }
-document.getElementById("drop").addEventListener("click", function() {
+document.getElementById("drop").addEventListener("click", function () {
   document.getElementById("drop").classList.remove("open");
   document.getElementById("check").innerHTML = "menu";
 });
@@ -57,7 +57,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const elements = document.querySelectorAll(".fade-up",".zoom-out");
+const elements = document.querySelectorAll(".fade-up", ".zoom-out");
 
 elements.forEach((element) => {
   observer.observe(element);
