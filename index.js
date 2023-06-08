@@ -1,64 +1,41 @@
+/*
+ * Toggles the visibility of the drop-down menu.
+ */
 function toggle() {
-  let d = document.getElementById("drop");
-  let con = document.getElementById("check");
-
-  // Check if the dropdown menu is already open
-  if (d.classList.contains("open")) {
-    // Close the dropdown menu
-    d.classList.remove("open");
-
-    // Update the text of the check element
-    con.innerHTML = "menu";
-    // If the clicked element is a li element, then close the dropdown menu
-  } else {
-    // Open the dropdown menu
-    d.classList.add("open");
-
-    // Update the text of the check element
-    con.innerHTML = "close";
-  }
+  const drop = document.querySelector("#drop");
+  const check = document.querySelector("#check");
+  drop.classList.toggle("open", !drop.classList.contains("open"));
+  check.innerHTML = drop.classList.contains("open") ? "close" : "menu";
 }
-document.getElementById("drop").addEventListener("click", function () {
-  document.getElementById("drop").classList.remove("open");
-  document.getElementById("check").innerHTML = "menu";
-});
+document.querySelector("#drop").addEventListener("click", toggle);
+/**
+ * Changes the background color of the element to white.
+ */
 function hoverdiv(elementId) {
-  const backgroundColor = "white";
-  document.getElementById(elementId).style.backgroundColor = backgroundColor;
+  document.getElementById(elementId).style.backgroundColor = "white";
 }
+/**
+ * Changes the background color of the element to the specified color.
+ */
 function nohoverdiv(elementId, divcolor) {
-  const backgroundColor = divcolor;
-  document.getElementById(elementId).style.backgroundColor = backgroundColor;
+  document.getElementById(elementId).style.backgroundColor = divcolor;
 }
+/**
+ * Shows the "Back to top" button when the user scrolls down.
+ */
 
-let mybutton = document.getElementById("myBtn");
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+  const mybutton = document.querySelector("#myBtn");
+  mybutton.style.display = window.scrollY > 20 ? "block" : "none";
 }
-// When the user clicks on the button, scroll to the top of the document
+document.addEventListener("scroll", scrollFunction);
+
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  window.scrollTo(0, 0);
 }
-//
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.intersectionRatio > 0) {
-      entry.target.classList.add("inview");
-    }
-  });
-});
 
-const elements = document.querySelectorAll(".fade-up", ".zoom-out");
-
+const observer = new IntersectionObserver(entries => entries.filter(entry => entry.intersectionRatio > 0).forEach(entry => entry.target.classList.add("inview")));
+const elements = document.querySelectorAll(".fade-up, .zoom-out");
 elements.forEach((element) => {
   observer.observe(element);
 });
