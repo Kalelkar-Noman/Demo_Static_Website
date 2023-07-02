@@ -23,7 +23,6 @@ function nohoverdiv(elementId, divcolor) {
 /**
  * Shows the "Back to top" button when the user scrolls down.
  */
-
 function scrollFunction() {
   const mybutton = document.querySelector("#myBtn");
   mybutton.style.display = window.scrollY > 20 ? "block" : "none";
