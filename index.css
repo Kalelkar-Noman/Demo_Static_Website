@@ -1,3 +1,4 @@
+
 nav,
 nav ul {
   display: flex;
@@ -48,7 +49,9 @@ img {
   transition: 0.2s;
 }
 body {
+  /* font-family: "Open Sans", sans-serif; */
   font-family: "Open Sans", sans-serif;
+
   color: #444;
 }
 h1,
@@ -57,7 +60,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Nunito, sans-serif;
+  /* font-family: Nunito, sans-serif; */
+  font-family: "Nunito", sans-serif;
   line-height: 1.2;
 }
 header {
@@ -291,9 +295,11 @@ footer .col-md-12 a {
 }
 footer ul li a {
   text-decoration: none;
-  color: #109962;
+  /* color: #109962; */
+  color: #067347;
   line-height: 2;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 100%;
 }
 .copyright {
   padding-top: 30px;
@@ -355,7 +361,8 @@ footer ul li a {
   .open {
     display: block;
     position: absolute;
-    right: 1rem;
+    /* right: 1rem; */
+    right: 4vw;
     top: 4rem;
     /* height: 160vw;
     width: 90vw; */
@@ -417,7 +424,8 @@ footer ul li a {
 }
 .fade-up {
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  /* 2s */
+  transition: opacity 1s ease-in-out;
 }
 .fade-up.inview {
   opacity: 1;
@@ -431,7 +439,8 @@ footer ul li a {
   }
 }
 .zoom-out {
-  animation: 2s linear zoomOut;
+  /* 2s */
+  animation: 1s linear zoomOut;
 }
 @keyframes fadeIn {
   0% {
