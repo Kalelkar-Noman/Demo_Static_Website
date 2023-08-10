@@ -9,6 +9,9 @@ nav ul {
 *,
 nav ul {
   margin: 0;
+  /* overflow: hidden; */
+  /* outline: 2px solid red; */
+  /* overflow-x: scroll; */
 }
 *,
 .first-left,
@@ -268,12 +271,16 @@ footer p {
   justify-content: center;
   align-items: center;
   height: 100%;
+  /* edited */
+  /* min-height: 500px; */
   background-color: #4af6b0;
 }
 .map iframe {
   border: 0;
   width: 90%;
   height: 90%;
+  /* edited */
+  max-height: 450px;
 }
 footer img {
   max-height: 40px;
@@ -352,7 +359,7 @@ footer ul li a {
     top: 4rem;
     /* height: 160vw;
     width: 90vw; */
-    height: 92vh;
+    height: 84vh;
     width: 92vw;
 
     z-index: 10;
@@ -379,7 +386,10 @@ footer ul li a {
     font-size: 17px;
   }
   .col-height {
-    height: 60vh;
+    /* height: 60vh; */
+    /* edited */
+    height: 50vw;
+    min-height: 500px;
   }
 }
 @media (max-width: 391px) {
