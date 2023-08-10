@@ -350,8 +350,11 @@ footer ul li a {
     position: absolute;
     right: 1rem;
     top: 4rem;
-    height: 160vw;
-    width: 90vw;
+    /* height: 160vw;
+    width: 90vw; */
+    height: 92vh;
+    width: 92vw;
+
     z-index: 10;
   }
   .first-left h1 {
@@ -441,5 +444,21 @@ footer ul li a {
   }
   .row {
     flex-direction: column;
+  }
+}
+/* .first-container{
+  background-image: url(https://tayoex.com.au/assets/img/hero-bg.png);
+} */
+.pulse {
+  box-shadow: 0px 0px 1px 1px #0000001a;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
   }
 }
